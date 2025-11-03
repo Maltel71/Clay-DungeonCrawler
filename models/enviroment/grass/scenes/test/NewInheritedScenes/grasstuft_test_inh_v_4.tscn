@@ -1,5 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cedwurgjws5xc"]
-
-[ext_resource type="PackedScene" uid="uid://brbfk2itvq0jv" path="res://models/enviroment/grass/raw_models/test_folder/grasstuft_test_v4.glb" id="1_rgfv0"]
-
-[node name="grasstuft_test_v4" instance=ExtResource("1_rgfv0")]
