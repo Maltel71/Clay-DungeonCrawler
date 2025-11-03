@@ -1,3 +1,4 @@
 res://Levels/Dungeoncrawler_Test_Scene.tscn
 res://shaders/WindTree_01.tres
 res://shaders/grass_swaywave_shader_02.gdshader
+res://scripts/player.gd
