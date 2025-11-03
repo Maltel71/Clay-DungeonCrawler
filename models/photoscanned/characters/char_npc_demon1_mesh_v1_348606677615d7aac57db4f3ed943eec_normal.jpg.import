@@ -1,0 +1,39 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://d30clhjbgbbto"
+path.s3tc="res://.godot/imported/char_npc_demon1_mesh_v1_348606677615d7aac57db4f3ed943eec_normal.jpg-a6e1ebcd2e54f1255ac7aee883adf1f8.s3tc.ctex"
+path.etc2="res://.godot/imported/char_npc_demon1_mesh_v1_348606677615d7aac57db4f3ed943eec_normal.jpg-a6e1ebcd2e54f1255ac7aee883adf1f8.etc2.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "669ea833fe961528ab61d3559f99ea95"
+}
+
+[deps]
+
+source_file="res://models/photoscanned/characters/char_npc_demon1_mesh_v1_348606677615d7aac57db4f3ed943eec_normal.jpg"
+dest_files=["res://.godot/imported/char_npc_demon1_mesh_v1_348606677615d7aac57db4f3ed943eec_normal.jpg-a6e1ebcd2e54f1255ac7aee883adf1f8.s3tc.ctex", "res://.godot/imported/char_npc_demon1_mesh_v1_348606677615d7aac57db4f3ed943eec_normal.jpg-a6e1ebcd2e54f1255ac7aee883adf1f8.etc2.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://models/photoscanned/characters/char_npc_demon1_mesh_v1_348606677615d7aac57db4f3ed943eec_normal.jpg"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

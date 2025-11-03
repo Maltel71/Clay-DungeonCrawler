@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://1qnt477rle2p"]
+
+[ext_resource type="Texture2D" uid="uid://dxr6mwlipugjg" path="res://textures/env_gridtexture_malte_sprite_v3.jpg" id="1_s4yek"]
+
+[resource]
+albedo_color = Color(0.49, 0.49, 0.49, 0.45098)
+albedo_texture = ExtResource("1_s4yek")
+uv1_scale = Vector3(3, 3, 3)
+uv1_triplanar = true
+texture_filter = 0

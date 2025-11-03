@@ -1,0 +1,39 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bx8wbd81ckgbg"
+path.s3tc="res://.godot/imported/env_light_walltorch_mesh_v1_602879680e105337d346d02598882047_normal.jpg-b7e6cf3a7629b54ce4819585b2f0c2fe.s3tc.ctex"
+path.etc2="res://.godot/imported/env_light_walltorch_mesh_v1_602879680e105337d346d02598882047_normal.jpg-b7e6cf3a7629b54ce4819585b2f0c2fe.etc2.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "803d95b1389db7c87eb1164bfb711528"
+}
+
+[deps]
+
+source_file="res://models/photoscanned/env_light_walltorch_mesh_v1_602879680e105337d346d02598882047_normal.jpg"
+dest_files=["res://.godot/imported/env_light_walltorch_mesh_v1_602879680e105337d346d02598882047_normal.jpg-b7e6cf3a7629b54ce4819585b2f0c2fe.s3tc.ctex", "res://.godot/imported/env_light_walltorch_mesh_v1_602879680e105337d346d02598882047_normal.jpg-b7e6cf3a7629b54ce4819585b2f0c2fe.etc2.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://models/photoscanned/env_light_walltorch_mesh_v1_602879680e105337d346d02598882047_normal.jpg"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

@@ -1,0 +1,236 @@
+[gd_scene load_steps=21 format=3 uid="uid://ceih22603j0td"]
+
+[ext_resource type="PackedScene" uid="uid://c21i07q7sqkd" path="res://models/photoscanned/characters/char_player_moleman1_mesh_v1.glb" id="1_dfbac"]
+[ext_resource type="PackedScene" uid="uid://4rdt4kj0pa43" path="res://models/photoscanned/env_wall_stonewall1_mesh_v1.glb" id="1_gqqm1"]
+[ext_resource type="PackedScene" uid="uid://cwt7b446cstsv" path="res://models/photoscanned/env_pillar_stonepillar1_mesh_v1.glb" id="2_dfbac"]
+[ext_resource type="PackedScene" uid="uid://cc7p53tsvs8tw" path="res://models/photoscanned/characters/char_npc_demon1_mesh_v1.glb" id="4_oj6f7"]
+[ext_resource type="PackedScene" uid="uid://sv1k0u7f6r7j" path="res://models/photoscanned/characters/char_npc_bluerhino_mesh_v1.glb" id="5_5glmv"]
+[ext_resource type="PackedScene" uid="uid://btywn56e2escg" path="res://models/photoscanned/env_light_walltorch_mesh_v1.glb" id="6_5pnfn"]
+[ext_resource type="PackedScene" uid="uid://dt455graujmga" path="res://models/photoscanned/env_ore_diamond_mesh_v1.glb" id="7_nwybv"]
+[ext_resource type="PackedScene" uid="uid://l0r7gesbi2lk" path="res://models/photoscanned/env_ore_sulfur_mesh_v1.glb" id="8_e3hyw"]
+[ext_resource type="PackedScene" uid="uid://blwg2m15jyqwo" path="res://models/photoscanned/env_pillar_stonepillar2_mesh_v1.glb" id="9_e3hyw"]
+[ext_resource type="PackedScene" uid="uid://bdmer63ce5yoq" path="res://models/photoscanned/props/prop_chest_woodenchest1_body_mesh_v1.glb" id="10_6aenw"]
+[ext_resource type="PackedScene" uid="uid://b3snmkjm5xx3m" path="res://models/photoscanned/props/prop_chest_woodenchest1_lid_mesh_v1.glb" id="11_lvbo4"]
+[ext_resource type="PackedScene" uid="uid://cnh02lo3fy7h2" path="res://models/photoscanned/props/prop_weapon_sword1_mesh_v1.glb" id="12_lvbo4"]
+[ext_resource type="PackedScene" uid="uid://bjlghkmumfwj8" path="res://models/photoscanned/props/prop_leathersack_mesh_v1.glb" id="13_rc12t"]
+[ext_resource type="Texture2D" uid="uid://dmu1qkxorgufe" path="res://textures/smoketextures/T_smoke_flipbook.png" id="14_rc12t"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_oj6f7"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_3q4sx"]
+sky_material = SubResource("ProceduralSkyMaterial_oj6f7")
+
+[sub_resource type="Environment" id="Environment_r4f87"]
+background_mode = 2
+sky = SubResource("Sky_3q4sx")
+tonemap_mode = 2
+glow_enabled = true
+fog_enabled = true
+volumetric_fog_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vtmd5"]
+transparency = 1
+albedo_texture = ExtResource("14_rc12t")
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 8
+particles_anim_v_frames = 8
+particles_anim_loop = false
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_lvbo4"]
+particle_flag_rotate_y = true
+emission_shape = 1
+emission_sphere_radius = 0.1
+angle_min = -180.0
+angle_max = 180.0
+direction = Vector3(0, 1, 0)
+spread = 0.0
+initial_velocity_min = 1.8
+initial_velocity_max = 2.3
+angular_velocity_min = -50.0
+angular_velocity_max = 50.0
+gravity = Vector3(0, 0, 0)
+scale_min = 0.9
+scale_max = 2.2
+anim_speed_min = 1.0
+anim_speed_max = 1.0
+
+[sub_resource type="QuadMesh" id="QuadMesh_0sb8s"]
+
+[node name="PhotoscanTestScene" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_r4f87")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="wall_prefab" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.45633, 0, 0.223661)
+
+[node name="env_wall_stonewall1_mesh_v2" parent="wall_prefab" instance=ExtResource("1_gqqm1")]
+
+[node name="env_wall_stonewall1_mesh_v15" parent="wall_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8234, 0, 0)
+
+[node name="env_wall_stonewall1_mesh_v3" parent="wall_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.99908, 0, 0)
+
+[node name="env_pillar_stonepillar1_mesh_v1" parent="wall_prefab" instance=ExtResource("2_dfbac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19751, 0, 0.0361307)
+
+[node name="env_pillar_stonepillar1_mesh_v3" parent="wall_prefab" instance=ExtResource("2_dfbac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.52705, 0, 0.0361307)
+
+[node name="env_pillar_stonepillar1_mesh_v2" parent="wall_prefab" instance=ExtResource("2_dfbac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2874, 0, 0.0361307)
+
+[node name="wall_prefab2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.45633, 7.07028, -0.607306)
+
+[node name="env_pillar_stonepillar1_mesh_v2" parent="wall_prefab2" instance=ExtResource("2_dfbac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.12974, 0, 0.0361307)
+
+[node name="env_wall_stonewall1_mesh_v2" parent="wall_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15766, 0, 0)
+
+[node name="env_wall_stonewall1_mesh_v15" parent="wall_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.66574, 0, 0)
+
+[node name="env_pillar_stonepillar1_mesh_v1" parent="wall_prefab2" instance=ExtResource("2_dfbac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.55354, 0, -7.04745)
+
+[node name="env_pillar_stonepillar1_mesh_v3" parent="wall_prefab2" instance=ExtResource("2_dfbac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.52705, 0, -6.61321)
+
+[node name="floor_prefab" type="Node3D" parent="."]
+
+[node name="env_wall_stonewall1_mesh_v1" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.662947, 0, 0.223661)
+
+[node name="env_wall_stonewall1_mesh_v4" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -4.66295, 0, 0.223661)
+
+[node name="env_wall_stonewall1_mesh_v5" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.66295, 0, 0.223661)
+
+[node name="env_wall_stonewall1_mesh_v6" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.662947, 0, -1.77634)
+
+[node name="env_wall_stonewall1_mesh_v7" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -4.66295, 0, -1.77634)
+
+[node name="env_wall_stonewall1_mesh_v8" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.66295, 0, -1.77634)
+
+[node name="env_wall_stonewall1_mesh_v9" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.662947, 0, -3.77634)
+
+[node name="env_wall_stonewall1_mesh_v10" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -4.66295, 0, -3.77634)
+
+[node name="env_wall_stonewall1_mesh_v11" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.66295, 0, -3.77634)
+
+[node name="env_wall_stonewall1_mesh_v12" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.662947, 0, -5.77634)
+
+[node name="env_wall_stonewall1_mesh_v13" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -4.66295, 0, -5.77634)
+
+[node name="env_wall_stonewall1_mesh_v14" parent="floor_prefab" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.66295, 0, -5.77634)
+
+[node name="floor_prefab2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.84168, 0)
+
+[node name="env_wall_stonewall1_mesh_v1" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.662947, 0, 0.223661)
+
+[node name="env_wall_stonewall1_mesh_v4" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -4.66295, 0, 0.223661)
+
+[node name="env_wall_stonewall1_mesh_v5" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.66295, 0, 0.223661)
+
+[node name="env_wall_stonewall1_mesh_v6" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.662947, 0, -1.77634)
+
+[node name="env_wall_stonewall1_mesh_v7" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -4.66295, 0, -1.77634)
+
+[node name="env_wall_stonewall1_mesh_v8" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.66295, 0, -1.77634)
+
+[node name="env_wall_stonewall1_mesh_v9" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.662947, 0, -3.77634)
+
+[node name="env_wall_stonewall1_mesh_v10" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -4.66295, 0, -3.77634)
+
+[node name="env_wall_stonewall1_mesh_v11" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.66295, 0, -3.77634)
+
+[node name="env_wall_stonewall1_mesh_v12" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.662947, 0, -5.77634)
+
+[node name="env_wall_stonewall1_mesh_v13" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -4.66295, 0, -5.77634)
+
+[node name="env_wall_stonewall1_mesh_v14" parent="floor_prefab2" instance=ExtResource("1_gqqm1")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.66295, 0, -5.77634)
+
+[node name="env_light_walltorch_mesh_v1" parent="." instance=ExtResource("6_5pnfn")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.32756, 9.26561, -1.68371)
+
+[node name="env_ore_diamond_mesh_v1" parent="." instance=ExtResource("7_nwybv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.678756, 7.88302, -1.81443)
+
+[node name="env_ore_sulfur_mesh_v1" parent="." instance=ExtResource("8_e3hyw")]
+transform = Transform3D(0.258819, 0, 0.965926, 0, 1, 0, -0.965926, 0, 0.258819, -1.80902, 7.85755, -1.81936)
+
+[node name="env_pillar_stonepillar2_mesh_v1" parent="." instance=ExtResource("9_e3hyw")]
+transform = Transform3D(0.723077, 0, 0, 0, -1.74846e-08, 0.636582, 0, -0.4, -2.78259e-08, -4.31487, 9.43305, -0.899505)
+
+[node name="characters" type="Node3D" parent="."]
+
+[node name="char_player_moleman1_mesh_v1" parent="characters" instance=ExtResource("1_dfbac")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -4.10055, 0.400423, -8.00946)
+
+[node name="char_npc_demon1_mesh_v1" parent="characters" instance=ExtResource("4_oj6f7")]
+transform = Transform3D(-0.781771, 0, 0.623566, 0, 1, 0, -0.623566, 0, -0.781771, -0.876701, 7.29697, -5.15082)
+
+[node name="char_npc_bluerhino_mesh_v1" parent="characters" instance=ExtResource("5_5glmv")]
+transform = Transform3D(-0.788075, 0, -0.615579, 0, 1, 0, 0.615579, 0, -0.788075, -5.06142, 7.30308, -6.03507)
+
+[node name="props" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.81748, 7.24746, -1.51394)
+
+[node name="prop_chest_woodenchest1_body_mesh_v1" parent="props" instance=ExtResource("10_6aenw")]
+
+[node name="prop_chest_woodenchest1_lid_mesh_v1" parent="props" instance=ExtResource("11_lvbo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0320501, 0.93677, -0.29619)
+
+[node name="prop_weapon_sword1_mesh_v1" parent="props" instance=ExtResource("12_lvbo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0917597, -5.10994, -6.43474)
+
+[node name="prop_leathersack_mesh_v1" parent="props" instance=ExtResource("13_rc12t")]
+transform = Transform3D(0.459034, -0.0979224, -0.172336, 0.168241, 0.422337, 0.208151, 0.104802, -0.249084, 0.420682, 3.08974, -5.42283, -6.37114)
+
+[node name="vfx_smoke_realistic_01" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.31842, 9.96458, -1.63008)
+material_override = SubResource("StandardMaterial3D_vtmd5")
+amount = 20
+lifetime = 2.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_lvbo4")
+draw_pass_1 = SubResource("QuadMesh_0sb8s")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.29355, 10.2392, -2.00657)
+light_color = Color(0.955424, 0.599034, 0.301105, 1)
+light_energy = 3.748
+shadow_enabled = true

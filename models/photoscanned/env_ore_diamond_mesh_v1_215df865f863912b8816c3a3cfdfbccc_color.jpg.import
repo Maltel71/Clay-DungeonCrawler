@@ -1,0 +1,39 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://b8iexvti0b608"
+path.s3tc="res://.godot/imported/env_ore_diamond_mesh_v1_215df865f863912b8816c3a3cfdfbccc_color.jpg-96cfe60f952f6b974288c65b68dba59c.s3tc.ctex"
+path.etc2="res://.godot/imported/env_ore_diamond_mesh_v1_215df865f863912b8816c3a3cfdfbccc_color.jpg-96cfe60f952f6b974288c65b68dba59c.etc2.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "76893ec6a3614c7ecace5b9d506f151a"
+}
+
+[deps]
+
+source_file="res://models/photoscanned/env_ore_diamond_mesh_v1_215df865f863912b8816c3a3cfdfbccc_color.jpg"
+dest_files=["res://.godot/imported/env_ore_diamond_mesh_v1_215df865f863912b8816c3a3cfdfbccc_color.jpg-96cfe60f952f6b974288c65b68dba59c.s3tc.ctex", "res://.godot/imported/env_ore_diamond_mesh_v1_215df865f863912b8816c3a3cfdfbccc_color.jpg-96cfe60f952f6b974288c65b68dba59c.etc2.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

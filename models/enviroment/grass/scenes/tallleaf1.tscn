@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://ijk5r8fjkpvq"]
+
+[ext_resource type="PackedScene" uid="uid://8f7jn30avtm7" path="res://models/enviroment/trees/env_tree_tallleaf1_painty_01_v1.glb" id="1_fc7mm"]
+[ext_resource type="Shader" uid="uid://cdbjd3xp17cyr" path="res://shaders/grass_swaywave_shader_02.gdshader" id="2_mopoh"]
+[ext_resource type="Texture2D" uid="uid://0ubbsuee60ys" path="res://models/enviroment/trees/env_tree_tallleaf1_painty_01_v1_GrassTextures_Painterly_01-GrassTextures_Painterly_ac_01.png" id="3_gm0ev"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5gdjx"]
+render_priority = 0
+shader = ExtResource("2_mopoh")
+shader_parameter/sway_strength = 0.5
+shader_parameter/sway_speed = 0.1
+shader_parameter/sway_scale = 0.5
+shader_parameter/sway_height_max = 1.0
+shader_parameter/sway_height_offset = 0.25
+shader_parameter/wave_strength = 1.5
+shader_parameter/wave_speed = 0.5
+shader_parameter/wave_frequency = 0.1
+shader_parameter/albedo_texture = ExtResource("3_gm0ev")
+
+[node name="Tallleaf1" type="Node3D"]
+
+[node name="env_tree_tallleaf1_painty_01_v1" parent="." instance=ExtResource("1_fc7mm")]
+
+[node name="Cylinder_002" parent="env_tree_tallleaf1_painty_01_v1" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_5gdjx")
+
+[editable path="env_tree_tallleaf1_painty_01_v1"]

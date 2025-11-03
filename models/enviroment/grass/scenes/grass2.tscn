@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbmkhxiu6i5ln"]
+
+[ext_resource type="PackedScene" uid="uid://u453hhwrq5f2" path="res://models/enviroment/grass/raw_models/env_grass2_painty_01_v1.glb" id="1_esp4y"]
+[ext_resource type="Shader" uid="uid://cdbjd3xp17cyr" path="res://shaders/grass_swaywave_shader_02.gdshader" id="2_inj31"]
+[ext_resource type="Texture2D" uid="uid://b8tgnwmoi1lxa" path="res://models/enviroment/grass/raw_models/env_grass1_painty_01_v1_GrassTextures_Painterly_01.png" id="3_xgvwm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_efeu5"]
+render_priority = 0
+shader = ExtResource("2_inj31")
+shader_parameter/sway_strength = 0.5
+shader_parameter/sway_speed = 2.0
+shader_parameter/sway_scale = 0.5
+shader_parameter/wave_strength = 1.5
+shader_parameter/wave_speed = 0.5
+shader_parameter/wave_frequency = 0.1
+shader_parameter/albedo_texture = ExtResource("3_xgvwm")
+
+[node name="Grass1" type="Node3D"]
+
+[node name="env_grass2_painty_01_v1" parent="." instance=ExtResource("1_esp4y")]
+
+[node name="grass_plane_012" parent="env_grass2_painty_01_v1" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_efeu5")
+
+[editable path="env_grass2_painty_01_v1"]

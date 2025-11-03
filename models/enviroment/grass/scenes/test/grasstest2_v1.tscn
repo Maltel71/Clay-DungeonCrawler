@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0o550epyympn"]
+
+[ext_resource type="PackedScene" uid="uid://2flwcjha87o4" path="res://models/enviroment/grass/raw_models/test_folder/grasstuft_test2_v1.glb" id="1_5gtet"]
+[ext_resource type="Material" uid="uid://dogruvlglmpv2" path="res://shaders/grass_sway_shader_01.tres" id="2_qddx8"]
+
+[node name="Grasstest2V1" type="Node2D"]
+
+[node name="grasstuft_test2_v1" parent="." instance=ExtResource("1_5gtet")]
+
+[node name="Plane_001" parent="grasstuft_test2_v1" index="0"]
+surface_material_override/0 = ExtResource("2_qddx8")
+
+[editable path="grasstuft_test2_v1"]

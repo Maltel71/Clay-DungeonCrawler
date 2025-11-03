@@ -1,0 +1,15 @@
+Camera3D
+Node3D
+OmniLight3D
+GPUParticles3D
+StaticBody3D
+LightmapGI
+SpotLight3D
+ReflectionProbe
+MeshInstance3D
+CollisionShape3D
+AudioStreamPlayer2D
+AudioStreamPlayer3D
+FogVolume
+DirectionalLight3D
+MultiMeshInstance3D

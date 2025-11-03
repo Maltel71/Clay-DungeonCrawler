@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://dogruvlglmpv2"]
+
+[ext_resource type="Shader" uid="uid://yecx4m3yi5jn" path="res://shaders/grass_swaysimple_shader_02.gdshader" id="1_wfhew"]
+[ext_resource type="Texture2D" uid="uid://cjfu64i713xa6" path="res://models/enviroment/grass/textures/GrassTextures_Painterly_01.png" id="2_wfhew"]
+[ext_resource type="Texture2D" uid="uid://no7r6un764fh" path="res://models/enviroment/grass/textures/GrassTextures_Painterly_ac_01.png" id="3_v56nd"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_wfhew")
+shader_parameter/sway_strength = 0.239
+shader_parameter/sway_speed = 1.398
+shader_parameter/sway_scale = 2.0
+shader_parameter/sway_height_max = 100.0
+shader_parameter/sway_height_offset = 0.0
+shader_parameter/wave_strength = 1.0
+shader_parameter/wave_speed = 0.7
+shader_parameter/wave_frequency = 0.1
+shader_parameter/albedo_texture = ExtResource("2_wfhew")
+shader_parameter/alpha_cutout_texture = ExtResource("3_v56nd")

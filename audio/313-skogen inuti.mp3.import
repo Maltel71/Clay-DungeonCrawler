@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbyyxxhh61a4j"
+path="res://.godot/imported/313-skogen inuti.mp3-28352538f236fa9e35d60907892568af.mp3str"
+
+[deps]
+
+source_file="res://audio/313-skogen inuti.mp3"
+dest_files=["res://.godot/imported/313-skogen inuti.mp3-28352538f236fa9e35d60907892568af.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

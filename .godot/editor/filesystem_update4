@@ -1,0 +1,9 @@
+res://Levels/Dungeoncrawler_Test_Scene.tscn
+res://materials/floor_mat3.tres
+res://materials/floor_mat4.tres
+res://shaders/grass_swaywave_shader_02.gdshader
+res://shaders/WindTree_01.tres
+res://models/enviroment/Grass_tut.tres
+res://addons/terrain_3d/extras/shaders/minimum.gdshader
+res://addons/terrain_3d/extras/shaders/lightweight.gdshader
+res://models/photoscanned/props/prefabs/walltorch.tscn
