@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd4kt8cv04qpq"]
+
+[ext_resource type="PackedScene" uid="uid://p6dennigi05c" path="res://prefabs/env_wall_stonefloor_part_1_v_1.tscn" id="1_g151n"]
+[ext_resource type="PackedScene" uid="uid://drdtibparuhr4" path="res://prefabs/env_pillar_stonepillar_1_v_2.tscn" id="2_akrp3"]
+
+[node name="env_wall_stonefloor_part1_v1" type="Node3D"]
+
+[node name="env_wall_stonefloor_part1_v5" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55339, 1.31062, -4.5)
+
+[node name="env_wall_stonefloor_part1_v6" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -1.42972, 1.31062, -4.5)
+
+[node name="env_wall_stonefloor_part1_v11" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 1.55339, 3.31062, -4.5)
+
+[node name="env_wall_stonefloor_part1_v12" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, -1.42972, 3.31062, -4.5)
+
+[node name="env_wall_stonefloor_part1_v7" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55339, 1.31062, 4.5)
+
+[node name="env_wall_stonefloor_part1_v8" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -1.42972, 1.31062, 4.5)
+
+[node name="env_wall_stonefloor_part1_v13" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55339, 3.31062, 4.5)
+
+[node name="env_wall_stonefloor_part1_v14" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -1.42972, 3.31062, 4.5)
+
+[node name="env_pillar_stonepillar1_mesh_v2" parent="." instance=ExtResource("2_akrp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.65271, 0, 4.5)
+
+[node name="env_pillar_stonepillar1_mesh_v3" parent="." instance=ExtResource("2_akrp3")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -3.65271, 5.17303, 4.5)
+
+[node name="env_pillar_stonepillar1_mesh_v4" parent="." instance=ExtResource("2_akrp3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.653, 0, -4.5)
+
+[node name="env_pillar_stonepillar1_mesh_v5" parent="." instance=ExtResource("2_akrp3")]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -3.65271, 5.17303, -4.5)
+
+[node name="env_wall_stonefloor_part1_v1" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2, 0, 3)
+
+[node name="env_wall_stonefloor_part1_v2" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(-1, -5.32375e-05, -2.32709e-12, 0, -4.37114e-08, 1, -5.32375e-05, 1, 4.37114e-08, -1.99989, 0, -3)
+
+[node name="env_wall_stonefloor_part1_v3" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2, 0, -1)
+
+[node name="env_wall_stonefloor_part1_v4" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(-1, -5.32375e-05, -2.32709e-12, 0, -4.37114e-08, 1, -5.32375e-05, 1, 4.37114e-08, -2.00011, 0, 1)
+
+[node name="env_wall_stonefloor_part1_v9" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2, 0, 3)
+
+[node name="env_wall_stonefloor_part1_v10" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2, 0, 1)
+
+[node name="env_wall_stonefloor_part1_v15" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2, 0, -1)
+
+[node name="env_wall_stonefloor_part1_v16" parent="." instance=ExtResource("1_g151n")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 2, 0, -3)

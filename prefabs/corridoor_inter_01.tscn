@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://cw5tvevfdj6kp"]
+
+[ext_resource type="PackedScene" uid="uid://drdtibparuhr4" path="res://prefabs/env_pillar_stonepillar_1_v_2.tscn" id="1_lyg43"]
+[ext_resource type="PackedScene" uid="uid://p6dennigi05c" path="res://prefabs/env_wall_stonefloor_part_1_v_1.tscn" id="3_taxrp"]
+
+[node name="corridoor_inter_01" type="Node3D"]
+
+[node name="env_pillar_stonepillar1_mesh_v2" parent="." instance=ExtResource("1_lyg43")]
+
+[node name="env_wall_stonefloor_part1_v4" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(-1.03316e-07, 1, 4.37114e-08, -9.88298e-23, -4.37114e-08, 1, 1, 1.03316e-07, 3.68704e-15, -0.948085, 0, -0.384047)
+
+[node name="env_wall_stonefloor_part1_v5" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(-1.03316e-07, 1, 4.37114e-08, -9.88298e-23, -4.37114e-08, 1, 1, 1.03316e-07, 3.68704e-15, 1.05191, 0, -0.384047)
+
+[node name="env_wall_stonefloor_part1_v6" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(-1.03316e-07, 1, 4.37114e-08, -9.88298e-23, -4.37114e-08, 1, 1, 1.03316e-07, 3.68704e-15, 1.05191, 0, 2.61595)
+
+[node name="env_wall_stonefloor_part1_v10" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(-1.03316e-07, 1, 4.37114e-08, -9.88298e-23, -4.37114e-08, 1, 1, 1.03316e-07, 3.68704e-15, 3.05191, 0, -0.384047)
+
+[node name="env_wall_stonefloor_part1_v11" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(-1.03316e-07, 1, 4.37114e-08, -9.88298e-23, -4.37114e-08, 1, 1, 1.03316e-07, 3.68704e-15, 3.05191, 0, 2.61595)
+
+[node name="env_wall_stonefloor_part1_v7" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(-1.03316e-07, 1, 4.37114e-08, -9.88298e-23, -4.37114e-08, 1, 1, 1.03316e-07, 3.68704e-15, -0.948085, 0, 2.61595)
+
+[node name="env_wall_stonefloor_part1_v8" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(1.58933e-08, -1, -4.37114e-08, -4.23656e-23, -4.37114e-08, 1, -1, -1.58933e-08, 1.34329e-16, -2.94809, 0, 2.61595)
+
+[node name="env_wall_stonefloor_part1_v9" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(1.58933e-08, -1, -4.37114e-08, -4.23656e-23, -4.37114e-08, 1, -1, -1.58933e-08, 1.34329e-16, -2.94809, 0, -0.384047)
+
+[node name="env_wall_stonefloor_part1_v12" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(-1.03316e-07, 1, 4.37114e-08, -9.88298e-23, -4.37114e-08, 1, 1, 1.03316e-07, 3.68704e-15, -0.948085, 0, -2.38405)
+
+[node name="env_wall_stonefloor_part1_v13" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(-1.03316e-07, 1, 4.37114e-08, -9.88298e-23, -4.37114e-08, 1, 1, 1.03316e-07, 3.68704e-15, 1.05191, 0, -2.38405)
+
+[node name="env_wall_stonefloor_part1_v14" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(-1.03316e-07, 1, 4.37114e-08, -9.88298e-23, -4.37114e-08, 1, 1, 1.03316e-07, 3.68704e-15, 3.05191, 0, -2.38405)
+
+[node name="env_wall_stonefloor_part1_v15" parent="." instance=ExtResource("3_taxrp")]
+transform = Transform3D(1.58933e-08, -1, -4.37114e-08, -4.23656e-23, -4.37114e-08, 1, -1, -1.58933e-08, 1.34329e-16, -2.94809, 0, -2.38405)
