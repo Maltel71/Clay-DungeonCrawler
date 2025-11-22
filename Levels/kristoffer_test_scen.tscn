@@ -73,7 +73,7 @@ transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866027, -
 visible = false
 shadow_enabled = true
 
-[node name="DirectionalLight3D2" parent="Lights" instance=ExtResource("4_8bg22")]
+[node name="DirectionalLight3D2" parent="Lights" groups=["interactable"] instance=ExtResource("4_8bg22")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 0, 3.64468, 0)
 
 [node name="DirectionalLight3D3" parent="Lights" instance=ExtResource("4_8bg22")]
@@ -102,5 +102,7 @@ transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846
 
 [node name="Props" type="Node3D" parent="."]
 
-[node name="prop_chest_woodenchest1_body_mesh_v1" parent="Props" instance=ExtResource("5_3u3gx")]
-transform = Transform3D(-1, 7.24754e-12, 8.74228e-08, 7.96092e-11, 1, -1.74623e-10, -8.72482e-08, 6.336e-19, -1, 0, 0.313749, -1.2359)
+[node name="prop_chest_woodenchest1_body_mesh_v1" parent="Props" groups=["interactable"] instance=ExtResource("5_3u3gx")]
+transform = Transform3D(1, -7.24754e-12, -2.13163e-14, 7.96092e-11, 1, -1.74623e-10, -1.74573e-10, 1.55096e-25, 1, 0, 0.313749, -1.51914)
+
+[editable path="Props/prop_chest_woodenchest1_body_mesh_v1"]

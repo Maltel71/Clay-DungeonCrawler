@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://c5xgx6d4s8pyn"]
+[gd_scene load_steps=11 format=4 uid="uid://c5xgx6d4s8pyn"]
 
 [ext_resource type="Texture2D" uid="uid://bls0hs8bainom" path="res://models/photoscanned/env_light_walltorch_mesh_v1_a2ff5eb1cce2847f67dd9204dbdd41e2_color.jpg" id="1_hjymu"]
 [ext_resource type="Texture2D" uid="uid://bx8wbd81ckgbg" path="res://models/photoscanned/env_light_walltorch_mesh_v1_602879680e105337d346d02598882047_normal.jpg" id="2_4a4uo"]
@@ -74,7 +74,11 @@ anim_speed_max = 1.0
 
 [sub_resource type="QuadMesh" id="QuadMesh_0sb8s"]
 
-[node name="walltorch_mesh" type="Node3D"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hjymu"]
+radius = 0.385335
+height = 1.18434
+
+[node name="walltorch_mesh" type="StaticBody3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 0, 0, 0)
 
 [node name="WallTorch" type="MeshInstance3D" parent="."]
@@ -96,3 +100,7 @@ lifetime = 2.0
 fixed_fps = 60
 process_material = SubResource("ParticleProcessMaterial_lvbo4")
 draw_pass_1 = SubResource("QuadMesh_0sb8s")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.37087e-23, 0.176552, -1.56809e-16)
+shape = SubResource("CapsuleShape3D_hjymu")
