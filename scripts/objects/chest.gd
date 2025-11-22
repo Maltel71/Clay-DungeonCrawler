@@ -4,6 +4,9 @@ class_name Chest extends InteractableObject
 
 var is_open: bool
 
+func _ready() -> void:
+	super._ready()
+
 func interact() -> void:
 	if not is_open:
 		is_open = true
@@ -14,4 +17,4 @@ func toggle_display_text() -> void:
 	if is_open:
 		set_interaction_prompt("")
 	else:
-		set_interaction_prompt("E to open chest")
+		set_interaction_prompt(shake_effect + "Open chest" + shake_end)

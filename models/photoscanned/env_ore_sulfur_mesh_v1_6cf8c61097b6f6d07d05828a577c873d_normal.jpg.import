@@ -10,7 +10,7 @@ metadata={
 "vram_texture": true
 }
 generator_parameters={
-"md5": "111d0b3d48e324c6b1de40b350a4ef94"
+"md5": "e8e28d26a446e793fdd869608e24ffd5"
 }
 
 [deps]
@@ -23,6 +23,8 @@ dest_files=["res://.godot/imported/env_ore_sulfur_mesh_v1_6cf8c61097b6f6d07d0582
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=1
 compress/channel_pack=0
@@ -30,6 +32,10 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
 roughness/src_normal="res://models/photoscanned/env_ore_sulfur_mesh_v1_6cf8c61097b6f6d07d05828a577c873d_normal.jpg"
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

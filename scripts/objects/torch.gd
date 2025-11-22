@@ -5,7 +5,7 @@ class_name Torch extends InteractableObject
 @export var turned_on: bool = true
 
 func _ready() -> void:
-	toggle_display_text()
+	super._ready()
 
 func interact() -> void:
 	turned_on = !turned_on
@@ -15,6 +15,6 @@ func interact() -> void:
 
 func toggle_display_text() -> void:
 	if turned_on:
-		set_interaction_prompt("E to extinguish flame")
+		set_interaction_prompt(shake_effect + "Extinguish flame" + shake_end)
 	else:
-		set_interaction_prompt("E to light fire")
+		set_interaction_prompt(shake_effect + "Light fire" + shake_end)

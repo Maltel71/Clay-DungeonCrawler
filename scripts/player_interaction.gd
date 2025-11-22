@@ -1,6 +1,6 @@
 extends RayCast3D
 
-@onready var label: Label = %Label
+@onready var label: RichTextLabel = %Label
 @onready var player: CharacterBody3D = $"../.."
 
 var active_object: Node3D
