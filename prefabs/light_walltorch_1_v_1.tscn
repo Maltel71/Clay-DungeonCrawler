@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=4 uid="uid://c5xgx6d4s8pyn"]
+[gd_scene load_steps=12 format=4 uid="uid://c5xgx6d4s8pyn"]
 
+[ext_resource type="Script" uid="uid://ck0phj2oi833i" path="res://scripts/objects/torch.gd" id="1_4a4uo"]
 [ext_resource type="Texture2D" uid="uid://bls0hs8bainom" path="res://models/photoscanned/env_light_walltorch_mesh_v1_a2ff5eb1cce2847f67dd9204dbdd41e2_color.jpg" id="1_hjymu"]
 [ext_resource type="Texture2D" uid="uid://bx8wbd81ckgbg" path="res://models/photoscanned/env_light_walltorch_mesh_v1_602879680e105337d346d02598882047_normal.jpg" id="2_4a4uo"]
 [ext_resource type="Texture2D" uid="uid://dmu1qkxorgufe" path="res://textures/smoketextures/T_smoke_flipbook.png" id="3_onr7s"]
@@ -80,6 +81,7 @@ height = 1.18434
 
 [node name="walltorch_mesh" type="StaticBody3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 0, 0, 0)
+script = ExtResource("1_4a4uo")
 
 [node name="WallTorch" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_7ieif")

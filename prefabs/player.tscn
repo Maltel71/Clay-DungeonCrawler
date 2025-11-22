@@ -69,7 +69,7 @@ shape = SubResource("CapsuleShape3D_n7nqg")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.456291, 3.00661, -0.15728)
 
 [node name="PlayerInteraction" type="RayCast3D" parent="CameraPoint"]
-transform = Transform3D(4.49, 0, 0, 0, -4.63341e-08, -14.16, 0, 1.06, -6.18953e-07, -0.470692, -0.755275, -6.25849e-07)
+transform = Transform3D(25, 0, 0, 0, -4.63341e-08, -25, 0, 1.06, -1.09278e-06, -0.470692, -0.755275, -6.25849e-07)
 target_position = Vector3(0, -3, 0)
 script = ExtResource("4_u51tk")
 
@@ -82,14 +82,20 @@ transform = Transform3D(1, 4.58406e-08, -2.37163e-08, -4.20665e-08, 0.990141, 0.
 
 [node name="Label" type="Label" parent="."]
 unique_name_in_owner = true
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -15.0
-offset_top = -11.5
-offset_right = 15.0
-offset_bottom = 11.5
+anchor_bottom = 1.0
+offset_left = -130.0
+offset_top = -222.0
+offset_right = 130.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 65
+horizontal_alignment = 1
+
+[node name="Label3D" type="Label3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 5.42101e-20, 1, 0, 0, 0, 1, -2.98021e-08, 3.43105, 3.0676e-06)
+billboard = 1

@@ -1,11 +1,11 @@
-res://prefabs/player.tscn
+res://prefabs/light_walltorch_1_v_1.tscn
 res://shaders/WindTree_01.tres
 res://shaders/grass_swaywave_shader_02.gdshader
-res://Levels/Dungeoncrawler_Test_Scene.tscn
+res://scripts/objects/torch.gd
 res://Levels/kristoffer_test_scen.tscn
+res://Levels/Dungeoncrawler_Test_Scene.tscn
+res://prefabs/player.tscn
 res://prefabs/prop_chest_woodenchest_1_v_1.tscn
-res://scripts/player_interaction.gd
-res://scripts/player.gd
-res://prefabs/light_walltorch_1_v_1.tscn
 res://scripts/interactable_object.gd
+res://scripts/player_interaction.gd
 res://scripts/objects/chest.gd
