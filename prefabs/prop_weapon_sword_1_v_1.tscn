@@ -1,8 +1,16 @@
-[gd_scene load_steps=8 format=4 uid="uid://cmwbq2gqnmj7e"]
+[gd_scene load_steps=10 format=4 uid="uid://cmwbq2gqnmj7e"]
 
 [ext_resource type="Texture2D" uid="uid://rjeqr5eaavkd" path="res://models/photoscanned/props/prop_weapon_sword1_mesh_v1_Image_1.jpg" id="1_83pd4"]
 [ext_resource type="Script" uid="uid://ccgcm7mrpd744" path="res://scripts/objects/small_sword.gd" id="1_bola0"]
 [ext_resource type="Texture2D" uid="uid://dqv8wp33dr0fe" path="res://models/photoscanned/props/prop_weapon_sword1_mesh_v1_Image.jpg" id="2_bola0"]
+[ext_resource type="Script" uid="uid://duusato8aiyxi" path="res://scripts/resources/weapon_data.gd" id="2_wxyax"]
+
+[sub_resource type="Resource" id="Resource_u3q6y"]
+script = ExtResource("2_wxyax")
+damage = 3.0
+item_name = "Shortsword"
+value = 8
+metadata/_custom_type_script = "uid://duusato8aiyxi"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ylvs"]
 resource_name = "material"
@@ -50,6 +58,7 @@ size = Vector3(0.6513672, 2.31781, 0.23730469)
 
 [node name="prop_weapon_sword1_v1" type="Area3D"]
 script = ExtResource("1_bola0")
+data = SubResource("Resource_u3q6y")
 
 [node name="mesh" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_3k2rx")

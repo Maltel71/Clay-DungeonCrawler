@@ -1,0 +1,14 @@
+res://Levels/kristoffer_test_scen.tscn
+res://shaders/WindTree_01.tres
+res://shaders/grass_swaywave_shader_02.gdshader
+res://data/ore_data.gd
+res://data/item_data.gd
+res://scripts/pickupable_object.gd
+res://prefabs/prop_small_leathersack_1_v_1.tscn
+res://scripts/resources/weapon_data.gd
+res://prefabs/prop_weapon_sword_1_v_1.tscn
+res://scripts/objects/diamond.gd
+res://scripts/objects/chest.gd
+res://prefabs/env_corridor_1_v_1.tscn
+res://prefabs/corridoor_inter_01.tscn
+res://prefabs/env_corridor_end_1_v_1.tscn

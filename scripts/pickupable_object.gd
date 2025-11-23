@@ -1,5 +1,7 @@
 class_name PickupableObject extends InteractableObject
 
+@export var data: Item
+
 func _ready() -> void:
 	if interaction_prompt == "":
 		interaction_prompt = "Pick up"

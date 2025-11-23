@@ -1,8 +1,15 @@
-[gd_scene load_steps=8 format=4 uid="uid://bm2ykdu2xejlt"]
+[gd_scene load_steps=10 format=4 uid="uid://bm2ykdu2xejlt"]
 
 [ext_resource type="Script" uid="uid://qp5gxf1k0jtk" path="res://scripts/objects/small_leathersack.gd" id="1_a30ac"]
 [ext_resource type="Texture2D" uid="uid://pxlspsfepnf6" path="res://models/photoscanned/props/prop_leathersack_mesh_v1_3c79557bd35ceb11c698454554e9c8e9_color.jpg" id="2_0qp1a"]
+[ext_resource type="Script" uid="uid://cr2g8pvclsevg" path="res://scripts/resources/item_data.gd" id="2_c17ea"]
 [ext_resource type="Texture2D" uid="uid://cu7s5kttds7fj" path="res://models/photoscanned/props/prop_leathersack_mesh_v1_3af6c7a864fb6274aeb8c6059e5acedd_normal.jpg" id="3_c17ea"]
+
+[sub_resource type="Resource" id="Resource_0kjxv"]
+script = ExtResource("2_c17ea")
+item_name = "Small Leathersack"
+value = 5
+metadata/_custom_type_script = "uid://cr2g8pvclsevg"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7xv28"]
 resource_name = "material.010"
@@ -52,6 +59,7 @@ height = 1.3132324
 [node name="prop_small_leathersack1_v1" type="StaticBody3D"]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.97994196, -0.19928241, 0, 0.19928241, 0.9799421, 0, 0, 0)
 script = ExtResource("1_a30ac")
+data = SubResource("Resource_0kjxv")
 
 [node name="Mesh" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_oeib1")

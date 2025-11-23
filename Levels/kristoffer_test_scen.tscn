@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://cii4gwtitax5u"]
+[gd_scene load_steps=21 format=4 uid="uid://cii4gwtitax5u"]
 
 [ext_resource type="PackedScene" uid="uid://cd4kt8cv04qpq" path="res://prefabs/env_corridor_1_v_1.tscn" id="1_exep7"]
 [ext_resource type="PackedScene" uid="uid://cw5tvevfdj6kp" path="res://prefabs/corridoor_inter_01.tscn" id="2_blfmc"]
@@ -7,9 +7,11 @@
 [ext_resource type="PackedScene" uid="uid://cemhwo7mxboo8" path="res://prefabs/prop_chest_woodenchest_1_v_1.tscn" id="5_3u3gx"]
 [ext_resource type="PackedScene" uid="uid://bm2ykdu2xejlt" path="res://prefabs/prop_small_leathersack_1_v_1.tscn" id="6_w5r64"]
 [ext_resource type="PackedScene" uid="uid://cmwbq2gqnmj7e" path="res://prefabs/prop_weapon_sword_1_v_1.tscn" id="7_c8ody"]
+[ext_resource type="Script" uid="uid://davgpljkew0xr" path="res://scripts/resources/ore_data.gd" id="8_aaxaq"]
 [ext_resource type="Texture2D" uid="uid://b8iexvti0b608" path="res://models/photoscanned/env_ore_diamond_mesh_v1_215df865f863912b8816c3a3cfdfbccc_color.jpg" id="8_qs5g0"]
 [ext_resource type="Script" uid="uid://d1fi0bbkti57t" path="res://scripts/objects/diamond.gd" id="8_wmhrx"]
 [ext_resource type="Texture2D" uid="uid://rf8s73pu0ybf" path="res://models/photoscanned/env_ore_diamond_mesh_v1_076804596fd9b3f7cb674ee466206429_normal.jpg" id="9_wmhrx"]
+[ext_resource type="PackedScene" uid="uid://65bpc3wp1onb" path="res://prefabs/env_corridor_end_1_v_1.tscn" id="12_rykee"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8bg22"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -28,6 +30,12 @@ fog_light_color = Color(0, 0, 0, 1)
 fog_light_energy = 0.4
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.0494
+
+[sub_resource type="Resource" id="Resource_aaxaq"]
+script = ExtResource("8_aaxaq")
+item_name = "Diamond"
+value = 20
+metadata/_custom_type_script = "uid://davgpljkew0xr"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8h4hg"]
 resource_name = "material.011"
@@ -121,35 +129,34 @@ transform = Transform3D(3.0598e-07, 0, -1, 0, 1, 0, 1, 0, 3.0598e-07, 0, 0, -15)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Lights"]
 transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.75, -0.43301, 3.93941, 9.04554, -4.25365)
-visible = false
 shadow_enabled = true
 
 [node name="WallTorch" parent="Lights" groups=["interactable"] instance=ExtResource("4_8bg22")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 0, 3.64468, 0)
 
 [node name="DirectionalLight3D3" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 8, 3, 3.8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 8, 4, 3.8)
 
 [node name="DirectionalLight3D4" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, 8, 3, -3.8)
+transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, 8, 4, -3.8000002)
 
 [node name="DirectionalLight3D5" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 22, 3, 3.8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 22, 4, 3.8)
 
 [node name="DirectionalLight3D6" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, 22, 3, -3.8)
+transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, 22, 4, -3.8000002)
 
 [node name="DirectionalLight3D7" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, -22, 3, 3.8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, -22, 4, 3.8)
 
 [node name="DirectionalLight3D8" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, -22, 3, -3.8)
+transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, -22, 4, -3.8000002)
 
 [node name="DirectionalLight3D9" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, -8, 3, 3.8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, -8, 4, 3.8)
 
 [node name="DirectionalLight3D10" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, -8, 3, -3.8)
+transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, -8, 4, -3.8000002)
 
 [node name="Props" type="Node3D" parent="."]
 
@@ -159,21 +166,32 @@ interaction_prompt = "Pick up"
 
 [node name="prop_chest_woodenchest1_body_mesh_v1" parent="Props" groups=["interactable"] instance=ExtResource("5_3u3gx")]
 transform = Transform3D(1, -7.24754e-12, -2.13163e-14, 7.96092e-11, 1, -1.74623e-10, -1.74573e-10, 1.55096e-25, 1, 0, 0.313749, -1.51914)
-interaction_prompt = ""
+interaction_prompt = "Open chest"
 
 [node name="prop_small_leathersack1_v1" parent="Props" instance=ExtResource("6_w5r64")]
 transform = Transform3D(0.9999999, 0, 0, 0, 0.97994196, -0.19928244, 0, 0.19928241, 0.9799421, -5.1934304, 1.0000001, 3.7910526)
 
-[node name="env_ore_diamond1_v1" type="StaticBody3D" parent="."]
+[node name="env_ore_diamond1_v1" type="StaticBody3D" parent="Props"]
 transform = Transform3D(-0.20172882, -0.90368986, 0.37769052, -0.94552505, 0.07908216, -0.31579795, 0.25551486, -0.42082143, -0.8704145, -3.806599, 0.78526807, 3.7048104)
 script = ExtResource("8_wmhrx")
-interaction_prompt = null
-shake_text_effect = null
+data = SubResource("Resource_aaxaq")
 
-[node name="mesh" type="MeshInstance3D" parent="env_ore_diamond1_v1"]
+[node name="mesh" type="MeshInstance3D" parent="Props/env_ore_diamond1_v1"]
 mesh = SubResource("ArrayMesh_8wqrk")
 skeleton = NodePath("")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="env_ore_diamond1_v1"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Props/env_ore_diamond1_v1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15234375, 0)
 shape = SubResource("CapsuleShape3D_qs5g0")
+
+[node name="env_corridor_end1_v1" parent="." instance=ExtResource("12_rykee")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.024095535, 0, 22.378183)
+
+[node name="env_corridor_end1_v2" parent="." instance=ExtResource("12_rykee")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.67711, 0, -0.12157655)
+
+[node name="env_corridor_end1_v3" parent="." instance=ExtResource("12_rykee")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -29.251299, 0, -0.12157655)
+
+[node name="env_corridor_end1_v4" parent="." instance=ExtResource("12_rykee")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -0.07876432, 0, -22.34458)

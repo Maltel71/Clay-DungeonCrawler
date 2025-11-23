@@ -17,4 +17,4 @@ func toggle_display_text() -> void:
 	if is_open:
 		set_interaction_prompt("")
 	else:
-		set_interaction_prompt(shake_effect + "Open chest" + shake_end)
+		set_interaction_prompt(shake_effect + interaction_prompt + shake_end)
