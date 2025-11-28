@@ -1,4 +1,6 @@
 OmniLight3D
+PointLight2D
+FogVolume
 CharacterBody3D
 StaticBody3D
 CollisionShape3D
@@ -10,6 +12,3 @@ MeshInstance3D
 Label
 AnimationPlayer
 Node3D
-RayCast3D
-Node
-SpringArm3D

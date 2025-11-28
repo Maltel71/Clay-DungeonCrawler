@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://cii4gwtitax5u"]
+[gd_scene load_steps=24 format=4 uid="uid://cii4gwtitax5u"]
 
 [ext_resource type="PackedScene" uid="uid://cd4kt8cv04qpq" path="res://prefabs/env_corridor_1_v_1.tscn" id="1_exep7"]
 [ext_resource type="PackedScene" uid="uid://cw5tvevfdj6kp" path="res://prefabs/corridoor_inter_01.tscn" id="2_blfmc"]
@@ -82,8 +82,19 @@ shadow_mesh = SubResource("ArrayMesh_po506")
 radius = 0.34960938
 height = 1.3671875
 
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_rykee"]
+frequency = 0.0025
+fractal_gain = 1.595
+fractal_weighted_strength = 0.56
+
+[sub_resource type="NoiseTexture3D" id="NoiseTexture3D_w7lsi"]
+noise = SubResource("FastNoiseLite_rykee")
+
+[sub_resource type="FogMaterial" id="FogMaterial_b68d4"]
+albedo = Color(0.65794224, 0.6646713, 0.6434503, 1)
+density_texture = SubResource("NoiseTexture3D_w7lsi")
+
 [node name="World" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_3u3gx")
@@ -99,8 +110,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
 [node name="env_wall_stonefloor_part1_v7" parent="Environment" instance=ExtResource("1_exep7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0)
 
+[node name="env_wall_stonefloor_part1_v11" parent="Environment" instance=ExtResource("1_exep7")]
+transform = Transform3D(0.9659258, -0.25881904, 0, 0.25881904, 0.9659258, 0, 0, 0, 1, 15, -7, 0)
+
 [node name="env_wall_stonefloor_part1_v8" parent="Environment" instance=ExtResource("1_exep7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 0)
+
+[node name="env_wall_stonefloor_part1_v12" parent="Environment" instance=ExtResource("1_exep7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.81333, -6.2975836, 0)
 
 [node name="env_wall_stonefloor_part1_v2" parent="Environment" instance=ExtResource("1_exep7")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, 0)
@@ -124,6 +141,18 @@ transform = Transform3D(3.0598e-07, 0, -1, 0, 1, 0, 1, 0, 3.0598e-07, 0, 0, -8)
 transform = Transform3D(3.0598e-07, 0, -1, 0, 1, 0, 1, 0, 3.0598e-07, 0, 0, -15)
 
 [node name="corridoor_inter_01" parent="Environment" instance=ExtResource("2_blfmc")]
+
+[node name="env_corridor_end1_v1" parent="Environment" instance=ExtResource("12_rykee")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.024095535, 0, 22.378183)
+
+[node name="env_corridor_end1_v2" parent="Environment" instance=ExtResource("12_rykee")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.67711, 0, -0.12157655)
+
+[node name="env_corridor_end1_v3" parent="Environment" instance=ExtResource("12_rykee")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -29.251299, 0, -0.12157655)
+
+[node name="env_corridor_end1_v4" parent="Environment" instance=ExtResource("12_rykee")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -0.07876432, 0, -22.34458)
 
 [node name="Lights" type="Node3D" parent="."]
 
@@ -158,6 +187,12 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8
 [node name="DirectionalLight3D10" parent="Lights" instance=ExtResource("4_8bg22")]
 transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, -8, 4, -3.8000002)
 
+[node name="OmniLight3D" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.071299, 3.3777463, 1.1367478)
+light_color = Color(0.3794505, 0.8334728, 0.75287575, 1)
+light_energy = 3.37
+omni_range = 50.397
+
 [node name="Props" type="Node3D" parent="."]
 
 [node name="prop_weapon_sword1_v1" parent="Props" instance=ExtResource("7_c8ody")]
@@ -184,14 +219,7 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15234375, 0)
 shape = SubResource("CapsuleShape3D_qs5g0")
 
-[node name="env_corridor_end1_v1" parent="." instance=ExtResource("12_rykee")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.024095535, 0, 22.378183)
-
-[node name="env_corridor_end1_v2" parent="." instance=ExtResource("12_rykee")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.67711, 0, -0.12157655)
-
-[node name="env_corridor_end1_v3" parent="." instance=ExtResource("12_rykee")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -29.251299, 0, -0.12157655)
-
-[node name="env_corridor_end1_v4" parent="." instance=ExtResource("12_rykee")]
-transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -0.07876432, 0, -22.34458)
+[node name="FogVolume" type="FogVolume" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.838331, 0.9717598, 0)
+size = Vector3(40, 2, 40)
+material = SubResource("FogMaterial_b68d4")

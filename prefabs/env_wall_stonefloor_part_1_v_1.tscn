@@ -57,4 +57,5 @@ mesh = SubResource("ArrayMesh_vamx3")
 skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+visible = false
 shape = SubResource("BoxShape3D_h17v8")
