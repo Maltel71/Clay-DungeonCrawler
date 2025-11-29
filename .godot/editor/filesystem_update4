@@ -1,4 +1,4 @@
+res://prefabs/env_corridor_1_v_1.tscn
+res://prefabs/corridoor_inter_01.tscn
+res://prefabs/env_corridor_end_1_v_1.tscn
 res://Levels/kristoffer_test_scen.tscn
-res://shaders/WindTree_01.tres
-res://shaders/grass_swaywave_shader_02.gdshader
-res://prefabs/env_wall_stonefloor_part_1_v_1.tscn

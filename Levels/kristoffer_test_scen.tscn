@@ -119,6 +119,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 0)
 [node name="env_wall_stonefloor_part1_v12" parent="Environment" instance=ExtResource("1_exep7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.81333, -6.2975836, 0)
 
+[node name="env_wall_stonefloor_part1_v13" parent="Environment" instance=ExtResource("1_exep7")]
+transform = Transform3D(-0.96592593, 0.25881907, -8.7422784e-08, 0.25881907, 0.96592593, 0, 8.444392e-08, -2.262668e-08, -1, 35.241966, -1, -2.5410847e-07)
+
+[node name="env_wall_stonefloor_part1_v14" parent="Environment" instance=ExtResource("1_exep7")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 29.226, 0, 0)
+
 [node name="env_wall_stonefloor_part1_v2" parent="Environment" instance=ExtResource("1_exep7")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8, 0, 0)
 
@@ -146,7 +152,7 @@ transform = Transform3D(3.0598e-07, 0, -1, 0, 1, 0, 1, 0, 3.0598e-07, 0, 0, -15)
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.024095535, 0, 22.378183)
 
 [node name="env_corridor_end1_v2" parent="Environment" instance=ExtResource("12_rykee")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.67711, 0, -0.12157655)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.684036, -2, -0.12195798)
 
 [node name="env_corridor_end1_v3" parent="Environment" instance=ExtResource("12_rykee")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -29.251299, 0, -0.12157655)
@@ -164,28 +170,28 @@ shadow_enabled = true
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 0, 3.64468, 0)
 
 [node name="DirectionalLight3D3" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 8, 4, 3.8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 8, 3.2151613, 3.8)
 
 [node name="DirectionalLight3D4" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, 8, 4, -3.8000002)
+transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, 8, 3.2151613, -3.8000002)
 
 [node name="DirectionalLight3D5" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 22, 4, 3.8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, 22, 3.2151613, 3.8)
 
 [node name="DirectionalLight3D6" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, 22, 4, -3.8000002)
+transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, 22, 3.2151613, -3.8000002)
 
 [node name="DirectionalLight3D7" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, -22, 4, 3.8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, -22, 3.2151613, 3.8)
 
 [node name="DirectionalLight3D8" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, -22, 4, -3.8000002)
+transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, -22, 3.2151613, -3.8000002)
 
 [node name="DirectionalLight3D9" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, -8, 4, 3.8)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, -3.55271e-15, 8.74228e-08, -8.88178e-16, -1, -8, 3.2151613, 3.8)
 
 [node name="DirectionalLight3D10" parent="Lights" instance=ExtResource("4_8bg22")]
-transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, -8, 4, -3.8000002)
+transform = Transform3D(1, 7.7647e-23, 1.74846e-07, 0, 1, -3.55271e-15, -1.74846e-07, 8.88178e-16, 1, -8, 3.2151613, -3.8000002)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lights"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.071299, 3.3777463, 1.1367478)
